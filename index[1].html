@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MG Cyberster — Showroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">MG Cyberster — Showroom</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#register">Register</a>
+        <a href="#demo">Book Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2>Experience the future — MG Cyberster</h2>
+          <p>Futuristic electric roadster. Explore gallery, register interest, or book a demo drive — everything works in the browser.</p>
+          <div class="hero-actions">
+            <button id="view-gallery">View Gallery</button>
+            <button id="book-demo">Book Demo</button>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="images/car-1.svg" alt="MG Cyberster" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h3>Gallery</h3>
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Images inserted by script -->
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="section panel">
+      <div class="container">
+        <h3>Register Interest</h3>
+        <form id="register-form" class="form-grid">
+          <input type="text" id="r-name" placeholder="Full name" required>
+          <input type="email" id="r-email" placeholder="Email" required>
+          <input type="tel" id="r-phone" placeholder="Phone (optional)">
+          <button type="submit">Register</button>
+        </form>
+        <div id="registrations-list" class="list small"></div>
+      </div>
+    </section>
+
+    <section id="demo" class="section panel">
+      <div class="container">
+        <h3>Book Demo</h3>
+        <form id="demo-form" class="form-grid">
+          <input type="text" id="d-name" placeholder="Your name" required>
+          <input type="email" id="d-email" placeholder="Email" required>
+          <input type="date" id="d-date" required>
+          <input type="time" id="d-time" required>
+          <button type="submit">Book Demo</button>
+        </form>
+        <div id="demo-list" class="list small"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© MG Cyberster demo — Built for Sonu Sharma</small>
+    </div>
+  </footer>
+
+  <!-- modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close">Close</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
